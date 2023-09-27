@@ -1,12 +1,14 @@
  /*** If...else conditional statements ***/
 
 // 1. Declare two variables: 'userName' with your username ; and 'isLoggedIn'with true as value.
-
-
+const userName = 'Lina'
+let isLoggedIn = true
 // 2. Display the message 'Welcome, <username>' only if the user is logged in; output the message using the HTML element with id 'loginMessage'
-
+const $logInMessage = document.getElementById('loginMessage')
 // 3. Display a different message when the user is not logged in.
-
+if (isLoggedIn === true){
+    $logInMessage.textContent = 'Welcome,' + userName
+}
 
 /*** Switch conditional statements ***/
 // 1. Declare the following variables
